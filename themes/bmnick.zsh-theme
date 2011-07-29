@@ -37,7 +37,7 @@ function battery_charge {
 }
 
 PROMPT='
-%{$fg[magenta]%}%n%{$fg[white]%} at %{$fg[yellow]%}%m%{$fg[white]%} in %{$fg_bold[green]%}%~%{$reset_color%}${vcs_info_msg_0_}
+%{$fg[red]%}%n%{$fg[white]%} at %{$fg[yellow]%}%m%{$fg[white]%} in %{$fg_bold[blue]%}%~%{$reset_color%}${vcs_info_msg_0_}
 ${vcs_system} '
 
 RPROMPT='$(battery_charge)'
