@@ -6,7 +6,7 @@ zstyle ':vcs_info:*' check-for-changes true
 zstyle ':vcs_info:*' unstagedstr ' ✐'
 zstyle ':vcs_info:*' stagedstr ' ✉'
 zstyle ':vcs_info:*' actionformats '%F{5}(%f%s%F{5})%F{3}-%F{5}[%F{2}%b%F{3}|%F{1}%a%F{5}]%f ' '%s'
-zstyle ':vcs_info:*' formats '%F{7} on %F{5}%b%F{4}%u%c%f ' '%s'
+zstyle ':vcs_info:*' formats '%F{7} on %F{6}%b%F{4}%u%c%f ' '%s'
 #    '%F{2}%s%F{7}:%F{2}(%F{1}%b%F{2})%f '
 zstyle ':vcs_info:(sv[nk]|bzr):*' branchformat '%b%F{1}:%F{3}%r'
 zstyle ':vcs_info:*' enable git hg svn
@@ -37,7 +37,7 @@ function battery_charge {
 }
 
 PROMPT='
-%{$fg[red]%}%n%{$fg[white]%} at %{$fg[yellow]%}%m%{$fg[white]%} in %{$fg_bold[blue]%}%~%{$reset_color%}${vcs_info_msg_0_}
+%{$fg[red]%}%n%{$fg[white]%} at %{$fg[green]%}%m%{$fg[white]%} in %{$fg_bold[blue]%}%~%{$reset_color%}${vcs_info_msg_0_}
 ${vcs_system} '
 
 RPROMPT='$(battery_charge)'
