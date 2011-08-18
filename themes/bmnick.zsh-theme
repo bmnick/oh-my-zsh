@@ -33,7 +33,7 @@ prompt_bmnick_precmd () {
 }
 
 function battery_charge {
-    echo `~/Applications/batterymon.py` 2>/dev/null
+    echo `~/.batterymon.py` 2>/dev/null
 }
 
 PROMPT='
