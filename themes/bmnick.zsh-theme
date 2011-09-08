@@ -18,16 +18,16 @@ prompt_bmnick_precmd () {
 	
 	case "${vcs_info_msg_1_}" in
 		git)
-		vcs_system='☭'
+		vcs_system='⚛'
 		;;
 		hg)
-		vcs_system='☣'
+		vcs_system='✇'
 		;;
 		svn)
-		vcs_system='☠'
+		vcs_system='☁'
 		;;
 		*)
-		vcs_system='○'
+		vcs_system='☠'
 		;;
 	esac
 }
@@ -40,5 +40,7 @@ PROMPT='
 %{$fg[red]%}%n%{$fg[white]%} at %{$fg[green]%}%m%{$fg[white]%} in %{$fg_bold[blue]%}%~%{$reset_color%}${vcs_info_msg_0_}
 ${vcs_system} '
 
-RPROMPT='$(battery_charge)'
+local ret_status="%(?:%{$fg_bold[green]%}✔:%{$fg_bold[red]%}%? ✘)%{$reset_color%}"
+
+RPROMPT='${ret_status}'
 
