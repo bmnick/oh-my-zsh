@@ -1,4 +1,4 @@
-# Set up the rediculous prompt, thanks Steve Losh
+# Set up the rediculous prompt, inspired by Steve Losh
 autoload -U add-zsh-hook
 autoload -Uz vcs_info
 
@@ -37,7 +37,7 @@ function battery_charge {
 }
 
 PROMPT='
-%{$fg[red]%}%n%{$fg[white]%} at %{$fg[green]%}%m%{$fg[white]%} in %{$fg_bold[blue]%}%~%{$reset_color%}${vcs_info_msg_0_}
+%{$fg[green]%}%m%{$fg[white]%}❮%{$fg[red]%}%n%{$fg[white]%}❯⣿%{$fg_bold[blue]%}%~%{$reset_color%}${vcs_info_msg_0_}
 ${vcs_system} '
 
 local ret_status="%(?:%{$fg_bold[green]%}✔:%{$fg_bold[red]%}%? ✘)%{$reset_color%}"
