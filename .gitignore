@@ -3,3 +3,5 @@ log/.zsh_history
 projects.zsh
 cache
 *.swp
+!custom/example.zshcache
+cache/
