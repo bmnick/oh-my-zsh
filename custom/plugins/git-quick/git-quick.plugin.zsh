@@ -39,3 +39,13 @@ compdef _git grs=git-rebase
 alias gra='git rebase --abort'
 compdef _git gra=git-rebase
 
+# Diff helpers
+alias gd='git diff'
+compdef _git gd=git-diff
+
+# SVN helpers
+alias gsr='git svn rebase'
+compdef _git gsr=git-svn
+alias gsd='git svn dcommit'
+compdef _git gsd=git-svn
+
